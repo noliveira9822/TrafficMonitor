@@ -10,5 +10,6 @@ urlpatterns = [
     path('deletesegment/<int:segment_id>', delete_segment),
     path('segmentbyid/<int:segment_id>', get_segment_by_id),
     path('segmentsbycharacterization/<int:characterization>', get_segments_by_characterization),
+    path('segmentoperation/<int:segment_id>', speed_operation_on_segment),
     path('docs/', include_docs_urls(title='Traffic Segment API')),
 ]
