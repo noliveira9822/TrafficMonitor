@@ -10,7 +10,7 @@ Change into <u>traffic_monitor</u> directory and follow theses steps:
 - python3 manage.py runserver
 ----
 
-If you need to feed the database with some values, **traffic_speed.csv** has several records already and you can use them.
+If you need to feed the database with some values, **traffic_speed.csv** (downloaded from https://github.com/Ubiwhere/traffic_speed) has several records already and you can use them.
 In order to fill the database with these values, execute the **fill_db.py** script.
 
 - python3 fill_db.py
