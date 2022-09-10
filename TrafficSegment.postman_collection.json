@@ -1,0 +1,205 @@
+{
+	"info": {
+		"_postman_id": "33d39b8e-e396-4c4e-bb41-a587e0c8f8f1",
+		"name": "TrafficSegment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all segments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/traffic_segment/getsegments",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"traffic_segment",
+						"getsegments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add segment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":\"2\",\n    \"long_start\": \"88.9460064\",\n    \"lat_start\": \"12.75066046\",\n    \"long_end\": \"35.7450801\",\n    \"lat_end\": \"1179.207157\",\n    \"length\": \"135.9564943\",\n    \"speed\": \"67.76904762\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/traffic_segment/addsegment",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"traffic_segment",
+						"addsegment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update segment",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":\"1\",\n    \"long_start\": \"77.9460064\",\n    \"lat_start\": \"54.75066046\",\n    \"long_end\": \"35.7450801\",\n    \"lat_end\": \"1179.207157\",\n    \"length\": \"103.9564943\",\n    \"speed\": \"45.76904762\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/traffic_segment/updatesegment/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"traffic_segment",
+						"updatesegment",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete segment",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/traffic_segment/deletesegment/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"traffic_segment",
+						"deletesegment",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get segment by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/traffic_segment/segmentbyid/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"traffic_segment",
+						"segmentbyid",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get segment by characterization",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/traffic_segment/segmentsbycharacterization/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"traffic_segment",
+						"segmentsbycharacterization",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Speed operations",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":\"1\",\n    \"long_start\": \"77.9460064\",\n    \"lat_start\": \"54.75066046\",\n    \"long_end\": \"35.7450801\",\n    \"lat_end\": \"1179.207157\",\n    \"length\": \"103.9564943\",\n    \"speed\": \"45.76904762\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/traffic_segment/segmentoperation/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"traffic_segment",
+						"segmentoperation",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
