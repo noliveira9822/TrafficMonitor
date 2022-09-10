@@ -1,6 +1,4 @@
 import json
-from typing import Any
-from xml.dom.minidom import CharacterData
 from .models import TrafficSegment
 from .serializers import TrafficSegmentSerializer
 from rest_framework.decorators import api_view
@@ -76,7 +74,6 @@ Delete traffic segment record.
 @api_view(["DELETE"])
 @csrf_exempt
 def delete_segment(request, segment_id):
-    #payload = json.loads(request.body)
     try:
         segment = TrafficSegment.objects.get(id = segment_id)
         segment.delete()
