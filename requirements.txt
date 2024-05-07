@@ -16,7 +16,7 @@ httplib2==0.20.4
 httpx==0.23.0
 idna==3.3
 itypes==1.2.0
-Jinja2==3.1.2
+Jinja2==3.1.4
 MarkupSafe==2.1.1
 numpy==1.23.2
 pandas==1.4.4
